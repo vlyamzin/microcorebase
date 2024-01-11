@@ -1,0 +1,20 @@
+{
+  "name": "complete-react-case",
+  "private": true,
+  "workspaces": [
+    "./component-app",
+    "./lib-app",
+    "./main-app"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start": "concurrently 'cd ./component-app && npm start' 'cd ./lib-app && npm start' 'cd ./main-app && npm start'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "7.6.0",
+    "wait-on": "7.0.1"
+  }
+}
